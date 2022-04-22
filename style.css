@@ -1,6 +1,7 @@
 html {
     background: linear-gradient(to right, #00AAFF, #00ff6c);
     margin: 0;
+    font-family: 'Cascadia Code', 'Fira Code', sans-serif;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 50vw;
-    height: 35vh;
+    height: 30vh;
     justify-content: flex-end;
 }
 
@@ -57,17 +58,17 @@ body {
     background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 30vh;
+    justify-content:center;
+    height: 40vh;
+    gap: 16px;
 }
 
 #LDT {
-    
     padding-left: 40px;
 }
 
 #bottom {
-    height: 35vh;
+    height: 30vh;
 }
 
 #form {
@@ -97,8 +98,19 @@ body {
 }
 
 button {
+    font-family: 'Cascadia Code', 'Fira Code', sans-serif;
     width: 12vw;
     height: 5vh;
     background-color: rgba(255, 255, 255, .9);
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    height: 32px;
+    font-size:24px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
 }
