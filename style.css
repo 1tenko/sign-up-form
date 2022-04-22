@@ -12,7 +12,9 @@ body {
 #left-panel {
     width: 30vw;
     height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #name {
@@ -21,32 +23,82 @@ body {
     display: flex;
     justify-content: center;
     font-size: 96px;
-    margin-top: 25vh;
     padding: 40px;
 }
 
 #right-panel {
-    background-color: rgba(255, 255, 255, 0.75);;
+    background-color: rgba(255, 255, 255, 0.50);;
     width: 70vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-#top-text {
+#top {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50vw;
+    height: 35vh;
+    justify-content: flex-end;
 }
 
-#form-container {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+#text1 {
+    padding-left: 40px;
+}
+
+#text2 {
+    padding-bottom: 64px;
+    padding-left: 40px;
 }
 
 
-#div-fName, #div-lName, #div-email, #div-number {
+#middle {
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+
+#LDT {
+    
+    padding-left: 40px;
+}
+
+#bottom {
+    height: 35vh;
+}
+
+#form {
+    display: flex;
+    gap: 10vw;
+}
+
+#left-side, #right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+#div-fName, #div-email, #div-pword, #div-lName, #phoneNumber, #confirm-pword {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+#bottom-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+button {
+    width: 12vw;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, .9);
+    border: 1px solid white;
 }
